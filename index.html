@@ -26,6 +26,7 @@
   </head>
 
   <body>
+    <div class="hearts-container" id="heartsContainer"></div>
     <div id="wrapper">
       <div class="flag__birthday">
         <img src="./images/1.png" alt="" width="350" class="flag__left" />
@@ -293,6 +294,21 @@
       }, 600);
     });
 
+    function createHearts() {
+      const container = document.getElementById("heartsContainer");
+      const hearts = ["❤️", "💕", "💖", "💗", "💓", "💝"];
+
+      for (let i = 0; i < 15; i++) {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+        heart.style.left = Math.random() * 100 + "%";
+        heart.style.animationDelay = Math.random() * 8 + "s";
+        heart.style.animationDuration = Math.random() * 4 + 6 + "s";
+        container.appendChild(heart);
+      }
+    }
+
     // Audio Control Toggle
     audioControl.addEventListener("click", function () {
       if (bgAudio.paused) {
@@ -442,5 +458,6 @@
           ).style.opacity = "0";
         });
     }
+    createHearts()
   </script>
 </html>

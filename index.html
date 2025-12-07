@@ -61,7 +61,7 @@
           <div class="btn">
             <button id="btn__letter">
               <div class="mail">
-                Click Here Mehwish
+                Click Here My Love 🥹
                 <i class="fa-regular fa-envelope"></i>
               </div>
             </button>
@@ -70,11 +70,11 @@
         <div class="right">
           <div class="box__account">
             <div class="image">
-              <img src="./images/unnamed.png" alt="" />
+              <img src="./images/hid2.jpeg" alt="" />
             </div>
             <div class="name">
               <i class="fa-solid fa-heart"></i>
-              <span>Dear Mehwish</span>
+              <span>Dear Hidayat</span>
               <i class="fa-solid fa-heart"></i>
             </div>
             <div class="balloon_one">
@@ -132,10 +132,13 @@
         <div class="boxMail-container">
           <div class="card1">
             <div class="userImg">
-              <img src="images/unnamed.png" alt="" />
+              <img
+                src="images/WhatsApp Image 2025-12-07 at 10.45.04.jpeg"
+                alt=""
+              />
             </div>
             <h4 class="username">
-              To: Mehwish 💖<span class="underline"></span>
+              To: Hidayat 💖<span class="underline"></span>
             </h4>
 
             <h3>Happy Birthday</h3>
@@ -147,16 +150,13 @@
             <div class="card2-content">
               <h3>To You!</h3>
               <h2>
-                Happy birthday 🥳🎂🥳 chanda the day you come into my life I was
-                not really much attached to you but day by day you became close
-                to my heart . And now you are truly my younger sister. I wish I
-                could remove some of the pain from your life which you are
-                bearing alone. But you're always welcome 🤗 you can talk anytime
-                you want to talk specially those which you can't say to others.
-                And this year your all dreams come true . I wish that your
-                brother could wish you but if couldn't wish on him behalf I am
-                wishing you happy birthday 🎈🎂🎈 sana . Don't be Sad ok be
-                happy 😌
+                Hidayat, your smile is my favorite du’a, Your presence is truly
+                a blessing in my life. May your heart always be filled with
+                light, And may I be lucky to love you every day. Every moment
+                with you feels like a gift, A reminder of how beautiful Allah’s
+                blessings are. I pray your dreams come true, your path is
+                bright, And that my love for you only grows stronger. Happy
+                Birthday, my dearest Hidayat. 🤍
               </h2>
 
               <div class="imageCute2">
@@ -184,7 +184,62 @@
     </div>
   </body>
   <script>
-    let datetxt = "27 May";
+    // Mobile card interaction - tap card1 to reveal card2 content
+    if (window.innerWidth <= 658) {
+      let card1Clicked = false;
+      const card1 = document.querySelector(
+        ".boxMail .boxMail-container .card1"
+      );
+      const card2 = document.querySelector(
+        ".boxMail .boxMail-container .card2"
+      );
+
+      card1.addEventListener("click", function () {
+        if (!card1Clicked) {
+          card1Clicked = true;
+          card1.style.transform = "translate(-50%, -50%) rotateY(-140deg)";
+
+          // Trigger card2 content animations
+          setTimeout(function () {
+            document.querySelector(".boxMail .card2 h3").style.animation =
+              "texth3Mobile 2s forwards";
+            document.querySelector(
+              ".boxMail .card2-content .imageCute2"
+            ).style.animation =
+              "cute3 1s linear infinite, cute4Mobile 2s 1.5s forwards";
+            document.querySelector(
+              ".boxMail .card2-content .imageCute2"
+            ).style.animationDelay = "0s";
+          }, 500);
+
+          setTimeout(function () {
+            document.querySelector(".boxMail .card2 h2").style.animation =
+              "texth2 2s forwards";
+          }, 2000);
+        }
+      });
+
+      // Reset on close
+      document
+        .querySelector(".boxMail .fa-xmark")
+        .addEventListener("click", function () {
+          card1Clicked = false;
+          card1.style.transform = "translate(-50%, -50%)";
+          document.querySelector(".boxMail .card2 h3").style.animation = "none";
+          document.querySelector(".boxMail .card2 h2").style.animation = "none";
+          document.querySelector(
+            ".boxMail .card2-content .imageCute2"
+          ).style.animation = "none";
+          document.querySelector(".boxMail .card2 h3").style.opacity = "0";
+          document.querySelector(".boxMail .card2 h2").style.opacity = "0";
+          document.querySelector(
+            ".boxMail .card2-content .imageCute2"
+          ).style.opacity = "0";
+        });
+    }
+  </script>
+  <script>
+    let datetxt = "7th December";
     let datatxtletter =
       "My love. You are a very special girl. I always silently thank you for coming into my life. Today, I wish you all the best, lots of health, and lots of joy. I always hope we will celebrate many more birthdays like this together. Happy birthday to you.💕";
     let titleLetter = "To you";
@@ -329,5 +384,58 @@
     close.addEventListener("click", function () {
       boxmail.classList.remove("active");
     });
+    // Mobile card interaction - tap card1 to reveal card2 content
+    if (window.innerWidth <= 658) {
+      let card1Clicked = false;
+      const card1 = document.querySelector(
+        ".boxMail .boxMail-container .card1"
+      );
+      const card2 = document.querySelector(
+        ".boxMail .boxMail-container .card2"
+      );
+
+      card1.addEventListener("click", function () {
+        if (!card1Clicked) {
+          card1Clicked = true;
+          card1.style.transform = "translate(-50%, -50%) rotateY(-140deg)";
+
+          // Trigger card2 content animations
+          setTimeout(function () {
+            document.querySelector(".boxMail .card2 h3").style.animation =
+              "texth3Mobile 2s forwards";
+            document.querySelector(
+              ".boxMail .card2-content .imageCute2"
+            ).style.animation =
+              "cute3 1s linear infinite, cute4Mobile 2s 1.5s forwards";
+            document.querySelector(
+              ".boxMail .card2-content .imageCute2"
+            ).style.animationDelay = "0s";
+          }, 500);
+
+          setTimeout(function () {
+            document.querySelector(".boxMail .card2 h2").style.animation =
+              "texth2 2s forwards";
+          }, 2000);
+        }
+      });
+
+      // Reset on close
+      document
+        .querySelector(".boxMail .fa-xmark")
+        .addEventListener("click", function () {
+          card1Clicked = false;
+          card1.style.transform = "translate(-50%, -50%)";
+          document.querySelector(".boxMail .card2 h3").style.animation = "none";
+          document.querySelector(".boxMail .card2 h2").style.animation = "none";
+          document.querySelector(
+            ".boxMail .card2-content .imageCute2"
+          ).style.animation = "none";
+          document.querySelector(".boxMail .card2 h3").style.opacity = "0";
+          document.querySelector(".boxMail .card2 h2").style.opacity = "0";
+          document.querySelector(
+            ".boxMail .card2-content .imageCute2"
+          ).style.opacity = "0";
+        });
+    }
   </script>
 </html>
